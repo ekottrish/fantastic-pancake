@@ -2,9 +2,9 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAppContext } from '../context/AppContext';
-import { Player, Position } from '../types';
-import { MAX_TEAM_SIZE, MAX_PLAYERS_PER_TEAM, EMPTY_TEAM } from '../constants';
+import { useAppContext } from './AppContext';
+import { Player, Position } from './types';
+import { MAX_TEAM_SIZE, MAX_PLAYERS_PER_TEAM, EMPTY_TEAM } from './constants';
 
 const PlayerCard = ({ player, onBuy, onSell, inTeam, isTeamFull, canAfford, transfersEnabled, hasTooManyFromTeam }: { player: Player, onBuy: (p: Player) => void, onSell: (p: Player) => void, inTeam: boolean, isTeamFull: boolean, canAfford: boolean, transfersEnabled: boolean, hasTooManyFromTeam: boolean }) => (
     <div className="bg-primary-deep/60 p-4 rounded-lg shadow-lg flex flex-col justify-between transition-all duration-300 hover:scale-105">

@@ -3,8 +3,8 @@
 
 
 import React, { useState, useMemo } from 'react';
-import { useAppContext } from '../context/AppContext';
-import { Bet, BetCategory, BettingMarket, BetOption, BetMarketType, Player } from '../types';
+import { useAppContext } from './AppContext';
+import { Bet, BetCategory, BettingMarket, BetOption, BetMarketType, Player } from './types';
 
 const Card = ({ children, className = '' }: { children: React.ReactNode, className?: string }) => (
     <div className={`bg-primary-deep/50 p-6 rounded-xl shadow-lg backdrop-blur-sm ${className}`}>

@@ -3,9 +3,9 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useAppContext } from '../context/AppContext';
-import { Player, Position } from '../types';
-import { MAX_STARTERS, MAX_BENCH, EMPTY_TEAM } from '../constants';
+import { useAppContext } from './AppContext';
+import { Player, Position } from './types';
+import { MAX_STARTERS, MAX_BENCH, EMPTY_TEAM } from './constants';
 
 // A generic card component for consistent styling
 const Card = ({ children, title, className = '' }: { children: React.ReactNode, title: string, className?: string }) => (
