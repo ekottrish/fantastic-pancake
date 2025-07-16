@@ -1,9 +1,9 @@
 
 
-import React, { useState, useMemo } from 'react';
-import { useAppContext } from '../context/AppContext';
+import { useState, useMemo } from 'react';
+import { useAppContext } from '@/context/AppContext';
 import { Link } from 'react-router-dom';
-import { Fixture, Player, User, FixtureSettlementData } from '../types';
+import { Fixture, Player, User, FixtureSettlementData } from '@/types';
 
 const Card = ({ children, title, className = '' }: { children: React.ReactNode, title: string, className?: string }) => (
     <div className={`bg-primary-deep/50 p-6 rounded-xl shadow-lg backdrop-blur-sm w-full h-full flex flex-col ${className}`}>

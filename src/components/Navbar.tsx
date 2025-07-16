@@ -2,10 +2,10 @@
 
 "use client";
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { useAppContext } from '../context/AppContext';
-import { UserRole } from '../types';
+import { useAppContext } from '@/context/AppContext';
+import { UserRole } from '@/types';
 
 export const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

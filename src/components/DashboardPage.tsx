@@ -1,10 +1,8 @@
 
 
-
-import React from 'react';
-import { useAppContext } from '../context/AppContext';
-import { Player, Position } from '../types';
-import { POINTS_STRUCTURE, EMPTY_TEAM } from '../constants';
+import { useAppContext } from '@/context/AppContext';
+import { Player, Position } from '@/types';
+import { POINTS_STRUCTURE, EMPTY_TEAM } from '@/constants';
 
 const Card = ({ children, className = '' }: { children: React.ReactNode, className?: string }) => (
     <div className={`bg-primary-deep/50 p-6 rounded-xl shadow-lg backdrop-blur-sm ${className}`}>

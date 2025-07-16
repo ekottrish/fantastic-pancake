@@ -1,8 +1,8 @@
 
 
-import React, { useMemo } from 'react';
-import { useAppContext } from '../context/AppContext';
-import { Player } from '../types';
+import { useMemo } from 'react';
+import { useAppContext } from '@/context/AppContext';
+import { Player } from '@/types';
 
 const Card = ({ children, title, className = '' }: { children: React.ReactNode, title: string, className?: string }) => (
     <div className={`bg-primary-deep/50 p-6 rounded-xl shadow-lg backdrop-blur-sm w-full ${className}`}>

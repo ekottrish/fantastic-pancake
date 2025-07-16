@@ -1,7 +1,7 @@
 
 import { createClient } from '@supabase/supabase-js';
-import { Player, User, Bet, Fixture, TeamStanding, Position, BetMarketType, UserRole, PlayerOdds, FixtureOdds, FantasyTeam, PlayerStats } from '../types';
-import { SUPABASE_URL, SUPABASE_KEY } from './supabaseCredentials';
+import { Player, User, Bet, Fixture, TeamStanding, Position, BetMarketType, UserRole, PlayerOdds, FixtureOdds, FantasyTeam, PlayerStats } from '@/types';
+import { SUPABASE_URL, SUPABASE_KEY } from '@/services/supabaseCredentials';
 
 // Retrieve Supabase credentials from the dedicated configuration file.
 const supabaseUrl = SUPABASE_URL;

@@ -1,7 +1,6 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { useAppContext } from '../context/AppContext';
+import { useAppContext } from '@/context/AppContext';
 
 export const HomePage = () => {
     const { user } = useAppContext();

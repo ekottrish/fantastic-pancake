@@ -2,10 +2,10 @@
 
 
 
-import React, { createContext, useState, useContext, ReactNode, useEffect, useMemo } from 'react';
-import { AppContextType, User, Player, Bet, Fixture, TeamStanding, FixtureSettlementData, PlayerOdds, FixtureOdds, PlaceBetPayload, FantasyTeam, Position } from '../types';
-import { supabase } from '../services/supabaseClient';
-import { TEAM_BUDGET, MAX_TEAM_SIZE, MAX_STARTERS, MAX_BENCH, MAX_PLAYERS_PER_TEAM, EMPTY_TEAM } from '../constants';
+import { createContext, useState, useContext, ReactNode, useEffect, useMemo } from 'react';
+import { AppContextType, User, Player, Bet, Fixture, TeamStanding, FixtureSettlementData, PlayerOdds, FixtureOdds, PlaceBetPayload, FantasyTeam, Position } from '@/types';
+import { supabase } from '@/services/supabaseClient';
+import { TEAM_BUDGET, MAX_TEAM_SIZE, MAX_STARTERS, MAX_BENCH, MAX_PLAYERS_PER_TEAM, EMPTY_TEAM } from '@/constants';
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 

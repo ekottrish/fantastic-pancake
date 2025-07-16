@@ -1,10 +1,9 @@
 
 
-
-import React, { useMemo } from 'react';
-import { LeaderboardEntry, BettingLeaderboardEntry, TeamStanding, User, Bet } from '../types';
-import { useAppContext } from '../context/AppContext';
-import { EMPTY_TEAM } from '../constants';
+import { useMemo } from 'react';
+import { LeaderboardEntry, BettingLeaderboardEntry, TeamStanding, User, Bet } from '@/types';
+import { useAppContext } from '@/context/AppContext';
+import { EMPTY_TEAM } from '@/constants';
 
 const Card = ({ children, title }: { children: React.ReactNode, title: string }) => (
     <div className="bg-primary-deep/50 p-6 rounded-xl shadow-lg backdrop-blur-sm w-full">
