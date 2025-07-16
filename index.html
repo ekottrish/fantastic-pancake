@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kachra League</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cutive+Mono&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Cutive Mono', 'monospace'],
+              display: ['Poppins', 'sans-serif'],
+              doto: ['Bebas Neue', 'sans-serif'],
+            },
+            colors: {
+              'background-dark': '#111827', // A deep, dark base
+              'primary-deep': '#1A0B3D',   // Dark purple, for main elements
+              'primary-light': '#2D1E5F',  // Lighter purple, for cards/hover
+              'accent': '#A855F7',         // Bright purple for highlights
+              'light-gray': '#D1D5DB',     // For primary text
+              'dark-gray': '#4B5563',      // For borders and secondary text
+            },
+            animation: {
+              aurora: "aurora 60s linear infinite",
+              "fade-in-down": "fade-in-down 0.5s ease-out both"
+            },
+            keyframes: {
+              aurora: {
+                from: {
+                  backgroundPosition: "50% 50%, 50% 50%",
+                },
+                to: {
+                  backgroundPosition: "350% 50%, 350% 50%",
+                },
+              },
+              "fade-in-down": {
+                "0%": {
+                  opacity: "0",
+                  transform: "translateY(-10px)"
+                },
+                "100%": {
+                  opacity: "1",
+                  transform: "translateY(0)"
+                }
+              }
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.8.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.3",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.45.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-zinc-900 font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
