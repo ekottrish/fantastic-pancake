@@ -4,18 +4,18 @@
 
 import React from 'react';
 import { HashRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
-import { AppProvider, useAppContext } from './context/AppContext';
-import { Navbar } from './components/Navbar';
-import { HomePage } from './components/HomePage';
-import AuthPage from './components/AuthPage';
-import { MarketPage } from './components/MarketPage';
-import BettingPage from './components/BettingPage';
-import DashboardPage from './components/DashboardPage';
-import LeaderboardsPage from './components/LeaderboardsPage';
-import AnalyticsPage from './components/AnalyticsPage';
-import AdminPage from './components/AdminPage';
-import PickTeamPage from './components/PickTeamPage';
-import DatabaseSetupPage from './components/DatabaseSetupPage';
+import { AppProvider, useAppContext } from './AppContext';
+import { Navbar } from './Navbar';
+import { HomePage } from './HomePage';
+import AuthPage from './AuthPage';
+import { MarketPage } from './MarketPage';
+import BettingPage from './BettingPage';
+import DashboardPage from './DashboardPage';
+import LeaderboardsPage from './LeaderboardsPage';
+import AnalyticsPage from './AnalyticsPage';
+import AdminPage from './AdminPage';
+import PickTeamPage from './PickTeamPage';
+import DatabaseSetupPage from './DatabaseSetupPage';
 import { EMPTY_TEAM } from './constants';
 
 // Layout for protected routes that require a logged-in user
