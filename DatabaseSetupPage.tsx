@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { useAppContext } from '../context/AppContext';
+import { useAppContext } from './AppContext';
 
 const DatabaseSetupPage = () => {
     const { retryConnection, loading } = useAppContext();
